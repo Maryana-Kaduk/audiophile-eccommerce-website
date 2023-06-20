@@ -1,0 +1,386 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+body, h1, h2, h3, h4, h5, h5 ul, p {
+    margin: 0;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+body {
+    background: #FAFAFA;
+    margin: 0 auto;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+}
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+header {
+    background: #141414;
+    /* border-radius: 8px; */
+}
+header .container {
+    background-image: url(../images/headphones.png);
+    background-repeat: no-repeat;
+    background-position: bottom 0 right -43px;
+}
+nav ul {
+    padding: 0;
+    display: flex;
+    width: 549px;
+    /* justify-content: space-between; */
+    gap: 34px;
+
+}
+.navigation__link {
+    font-size: 13px;
+    line-height: 25px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    transition: all .5s;
+}
+.navigation__link:hover {
+    color: #D87D4A;
+}
+.header__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px 0 37px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    height: 97px;
+}
+
+.basket svg path {
+    transition: all .5s;
+}
+.basket svg:hover path {
+    fill: #D87D4A;
+}
+
+section.info {
+    color: #fff;
+    padding: 128px 0 158px;
+}
+.info-content {
+    max-width: 398px;
+    height: 346px;
+}
+.info__product {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    margin-bottom: 24px;
+}
+
+h1 {
+    font-size: 56px;
+    line-height: 58px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+}
+
+.info__text {
+    max-width: 349px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.75;
+    margin-bottom: 50px;
+}
+.button {
+    /* width: 160px;
+    height: 48px; */
+    padding: 15px 29.5px 15px 31.5px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all .5s;
+}
+.orange {
+    background: #D87D4A;
+    color: #fff; 
+}
+
+.orange:hover {
+    background-color: #FBAF85;
+}
+
+.products {
+    padding: 200px 0 120px;
+}
+.products__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.products-item {
+    width: 350px;
+    height: 204px;
+    background: #F1F1F1;
+    border-radius: 8px;
+    position: relative;
+    padding: 116px 109px 30px;
+    text-align: center;
+}
+.products-item img[alt="technic image"] {
+    position: absolute;
+    top: 0;
+    /* right: 113px; */
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.blur {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.products__category {
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 1.28571px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 15px;
+}
+.products__shop {
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.5);
+    padding-right: 18px;
+    position: relative;
+    transition: all .5s;
+}
+.products__shop:hover {
+    color: #D87D4A;
+}
+.products__shop::before {
+    content: ' ';
+    position: absolute;
+    width: 8px;
+    height: 12px;
+    background-image: url(../images/arrow.svg);
+    right: 0px;
+    top: 3px;
+}
+
+.speaker {
+    padding: 48px 0;
+}
+.speaker-wrapper {
+    height: 560px;
+    background: #D87D4A;
+    border-radius: 8px;
+    padding: 133px 95px 124px;
+    background-image: url(../images/circles.png);
+    background-repeat: no-repeat;
+    position: relative;
+}
+.speaker__content {
+    max-width: 349px;
+    height: 303px;
+    margin-left: auto;
+}
+.speaker__heading {
+    font-size: 56px;
+    line-height: 58px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+}
+.speaker__text {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.75;
+    margin-bottom: 51px;
+}
+.black {
+    background: #000000;
+    color: #FFFFFF;
+    /* border: 1px solid #000000; */
+}
+.black:hover {
+    background: #4C4C4C;
+    /* background: transparent;
+    border: 1px solid #000000;
+    color: #000; */
+}
+
+.content-image {
+    position: absolute;
+    left: 117px;
+    bottom: 0;
+}
+
+.grey__content {
+    border-radius: 8px;
+    background-image: url(../images/bg-speaker.png);
+    height: 320px;
+    padding: 101px 0 101px 95px;
+}
+.name {
+    font-size: 28px;
+    line-height: 38px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 42px;
+}
+.transparent {
+    background: transparent;
+    border: 1px solid #000000;
+    color: #000;
+}
+.transparent:hover {
+    background: #000000;
+    color: #fff;
+}
+
+
+.earphones {
+    padding-top: 48px;
+}
+.earphones__wrapper {
+    height: 320px;
+    display: flex;
+    justify-content: space-between;
+}
+.earphones-img {
+    width: 540px;
+    height: inherit;
+    background-image: url(../images/earphones.png);
+    background-repeat: no-repeat;
+}
+.earphones-content {
+    width: 540px;
+    height: inherit;
+    background: #F1F1F1;
+    border-radius: 8px;
+    padding: 101px 198px 101px 95px;
+}
+
+.best {
+    padding: 200px 0;
+}
+.best__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.best__content {
+    max-width: 445px;
+}
+.best__heading {
+    font-size: 40px;
+    line-height: 44px;
+    letter-spacing: 1.42857px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 32px;
+}
+.best__heading span  {
+    color: #D87D4A;
+}
+.best__text {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    color: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+.best__image {
+    width: 540px;
+    height: 588px;
+    background-image: url(../images/man.png);
+}
+footer {
+    height: 365px;
+    background: #101010;
+}
+.footer__content {
+    padding: 75px 0 48px;
+    position: relative;
+}
+.footer__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 25px;
+    margin-bottom: 36px;
+}
+.footer__wrapper nav ul {
+    width: 431px;
+}
+
+
+.footer__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bottom__text {
+    max-width: 540px;
+}
+.text-big {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    margin-bottom: 56px;
+}
+.text-small {
+    font-size: 15px;
+    line-height: 25px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+.bottom__social {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    /* justify-content: space-between;
+    width: 104px; */
+}
+.bottom__social svg > path {
+    transition: all .5s;
+}
+.bottom__social svg:hover > path {
+    fill: #D87D4A;
+}
+.orange-line {
+    width: 101px;
+    height: 4px;
+    background: #D87D4A;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
